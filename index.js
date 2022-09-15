@@ -3,13 +3,14 @@ exports.__esModule = true;
 var express = require("express");
 var app = express();
 var port = process.env.PORT || 3000;
+//  console.log(process.env.NOMBRE)
 app.get("/hola", function (req, res) {
     res.json({
-        message: "hola soy el servidor"
+        message: "hola soy el servidor,heroku"
     });
 });
 app.listen(port, function () {
-    console.log("hola soy express y estoy corriendo en el puerto" + port);
+    console.log("hola soy express y estoy corriendo en el puerto " + port);
 });
 // class User{
 //     nombre:string;
